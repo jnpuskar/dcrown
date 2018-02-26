@@ -10,9 +10,16 @@
             "options": {
                 "cwd": "${workspaceRoot}"
             },
-            "args": [
-                "debug-static-win64"                
-            ],
+            "windows": {
+                "args": [
+                    "debug-static-win64"                
+                ]
+            },
+            "linux": {
+                "args": [
+                    "debug-static-linux-x86_64"                
+                ],
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
