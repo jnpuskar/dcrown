@@ -18,7 +18,7 @@
                 "miDebuggerPath": "/usr/bin/gdb"             
             },
                   
-            "args":[],//["--add-exclusive-node 192.168.88.231"],
+            "args":["--add-exclusive-node 192.168.88.235"],
             "stopAtEntry": true,
             "cwd": "${workspaceRoot}/build/debug/bin",
             "environment": [],
