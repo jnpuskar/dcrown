@@ -107,6 +107,12 @@ endif()
 set(CMAKE_C_FLAGS_RELEASE "-DNDEBUG ${OPT_FLAGS_RELEASE}")
 set(CMAKE_CXX_FLAGS_RELEASE "-DNDEBUG ${OPT_FLAGS_RELEASE}")
 
+# set debugging block. Disable by setting to 0
+set(DEBUG_CREATE_BLOCK_TEMPLATE 1)
+if(DEBUG_CREATE_BLOCK_TEMPLATE)
+  add_definitions("-DDEBUG_CREATE_BLOCK_TEMPLATE")
+endif()
+
 # set this to 0 if per-block checkpoint needs to be disabled
 set(PER_BLOCK_CHECKPOINT 0)
 
